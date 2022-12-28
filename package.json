@@ -1,0 +1,29 @@
+{
+  "name": "media-device-wrapper",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/media-device-wrapper.umd.cjs",
+  "module": "./dist/media-device-wrapper.js",
+  "types": "./dist/media-device-wrapper.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/media-device-wrapper.js",
+      "require": "./dist/media-device-wrapper.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "dev:host": "vite --host",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0",
+    "vite-plugin-dts": "^1.7.1"
+  }
+}
